@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1026">
+    <meta name="description" content="Discover your cosmic profile, explore personal connections, and find new perspectives with Cosmic Profile & Synergy.">
+    <title>Cosmic Profile & Synergy</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background:
+                radial-gradient(
+                    ellipse at top,
+                    #25204d 0%,
+                    #11162f 45%,
+                    #080b19 100%
+                );
+            color: #f5f3ff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .symbol {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: #d6c5ff;
+            text-shadow: 0 0 30px rgba(167, 139, 250, 0.6);
+        }
+
+        .eyebrow {
+            color: #c4b5fd;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: clamp(2.3rem, 7vw, 3.5rem);
+            line-height: 1.15;
+            margin-bottom: 1.25rem;
+            font-weight: 750;
+            letter-spacing: -0.04em;
+        }
+
+        h1 span {
+            background: linear-gradient(
+                90deg,
+                #c4b5fd,
+                #f0abfc,
+                #93c5fd
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: #c4c5dd;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .feature {
+            padding: 0.65rem 0.9rem;
+            border: 1px solid rgba(196, 181, 253, 0.25);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.04);
+            color: #e5ddff;
+            font-size: 0.85rem;
+        }
+
+        .cta {
+            display: inline-block;
+            align-self: center;
+            padding: 1.1rem 2rem;
+            border-radius: 12px;
+            background: linear-gradient(
+                100deg,
+                #8b5cf6,
+                #c026d3
+            );
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.05rem;
+            text-decoration: none;
+            box-shadow: 0 8px 30px rgba(139, 92, 246, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 36px rgba(192, 38, 211, 0.35);
+        }
+
+        .cta:focus-visible {
+            outline: 3px solid #e9d5ff;
+            outline-offset: 5px;
+        }
+
+        .note {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #a5a5c2;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 3rem;
+            color: #8889a9;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            .symbol {
+                font-size: 3rem;
+            }
+
+            .description {
+                font-size: 1rem;
+            }
+
+            .cta {
+                width: 100%;
+                max-width: 340px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="symbol" aria-hidden="true">✧</div>
+
+        <div class="eyebrow">
+            Your Universe, Your Perspective
+        </div>
+
+        <h1>
+            Discover Your <span>Cosmic Profile</span>
+        </h1>
+
+        <p class="description">
+            Explore your personal profile, uncover new perspectives
+            on compatibility, discover your daily vibe, and find
+            meaningful ways to connect with yourself and others.
+        </p>
+
+        <div class="features">
+            <span class="feature">Cosmic Profiles</span>
+            <span class="feature">Compatibility</span>
+            <span class="feature">Daily Insights</span>
+            <span class="feature">Cosmic Matches</span>
+        </div>
+
+        <a
+            href="https://cosmic-profile-synergy-05gr.vercel.app/premium"
+            class="cta"
+        >
+            Explore the Cosmos &rarr;
+        </a>
+
+        <p class="note">
+            A space for curiosity, self-discovery, and personal reflection.
+            <br>
+            For entertainment and personal reflection, not prediction
+            or scientific assessment.
+        </p>
+
+        <footer>
+            &copy; <span id="year"></span> Cosmic Profile & Synergy
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+</body>
+</html>
